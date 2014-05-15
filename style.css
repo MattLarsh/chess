@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #C8944B;
+}
+#board{
+  height: 32em;
+  width: 32em;
+  margin: 4em auto;
+  background-color: #DADADA;
+}
+.box{
+  text-align: center;
+  height: 4em;
+  width: 4em;
+  
+  float: left;
+  padding-top: 1.15em;
+  color: grey;
+}
+#compKing{
+  font-size: 3em;
+  margin-left: 0.175em;
+}
+.red{
+  color: #BD2C06;
+  padding: 0;
+  height: 4em;
+  width: 4em;
+  float: left;
+}
+.blue{
+  color: #267B93;
+  padding: 0;
+  height: 4em;
+  width: 4em;
+  float: left;
+}
+#Queen{
+  font-size: 3em;
+  margin-left: 0.2em;
+}
+#King{
+  font-size: 3em;
+  margin-left: 0.2em;
+}
+#compQueen{
+  font-size: 3em;
+  margin-left: 0.2em;
+}
