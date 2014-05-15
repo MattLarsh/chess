@@ -3,7 +3,13 @@ $('#board').on('click','.blue', function(e){
 	redPositions();
   if(bothPieces['turn'] === 'blue'){
   	var piece = $(this).children().attr('id');
+  	bothPieces['currentMoves'].push(bluePieces[piece]);
+  	bluePieces['actualPiece'] = $(this).children().text();
     findAreaBlue[piece]();
+    bluePieces['origSquare'] = $(this);
+    bluePieces['origSquare'].removeClass('blue').addClass('box').children().attr('id','').text(bluePieces[piece]);
+    bluePieces['currentPiece'] = piece;
+    bothPieces['turn'] = 'bluePieceUp';
   }
 });
 
