@@ -214,6 +214,8 @@ moves = {
         area.push(allKingSpots[i]);
       }
     }
-    
+  },
+  knightMoves:function(pos,area,color){
+    var allKnightSpots = [];
   }
 }

@@ -1,4 +1,5 @@
 function redsTurn(){
+  console.log(redPieces);
   redPositions();
   bluePositions();
 	var randIndex = Math.floor(Math.random()*redPieces['totalPieces'].length);
