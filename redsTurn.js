@@ -1,5 +1,4 @@
 function redsTurn(){
-
   redPositions();
   bluePositions();
 	var randIndex = Math.floor(Math.random()*redPieces['totalPieces'].length);
@@ -17,8 +16,6 @@ function redsTurn(){
     delete bluePieces[redPieces['bluePieceInRange']];
     var blueIndex = bluePieces['totalPieces'].indexOf(redPieces['bluePieceInRange']);
     delete bluePieces['totalPieces'][blueIndex];
-    
-   
   }
   else{
     findAreaRed[redPieces['currentPiece']]();

@@ -32,5 +32,11 @@ var findAreaBlue = {
 	  moves.kingMoves(bluePieces['King'],area,'blue');
 	  addColor(area);
 	  bluePieces['currentArea'] = area;
+	},
+	'Bishop1': function(){
+		area = [];
+	  moves.diagonal(bluePieces['Bishop1'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
 	}
 }

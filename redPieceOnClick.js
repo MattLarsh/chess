@@ -1,5 +1,4 @@
 $('#board').on('click','.red',function(e){
-  
   if(bothPieces['turn'] === 'bluePieceUp'){
     var redPiece = $(this).children().attr('id');
     if(bluePieces['currentArea'].indexOf(redPieces[redPiece]) != -1){
