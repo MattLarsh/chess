@@ -242,5 +242,42 @@ moves = {
       }
     }
 
+  },
+  redPawnMoves:function(pos,area,color){
+    var allRedPawnSpots = [];
+    for(var i=0;i<64;i++){
+      if(label[i][0] == String.fromCharCode(pos[0].charCodeAt()) && label[i][1] == parseInt(pos[1])-1 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()) && label[i][1] == parseInt(pos[1])-2 
+        ){
+        allRedPawnSpots.push(label[i]);
+      }
+    }
+    for(var i=0;i<allRedPawnSpots.length;i++){
+      if(bluePieces['bluePositions'].indexOf(allRedPawnSpots[i]) == -1 && redPieces['redPositions'].indexOf(allRedPawnSpots[i]) == -1){
+        area.push(allRedPawnSpots[i]);
+      }
+      else if(color === 'red' && redPieces['redPositions'].indexOf(allRedPawnSpots[i]) == -1){
+        area.push(allRedPawnSpots[i]);
+      }
+    }
+  },
+  bluePawnMoves:function(pos,area,color){
+    var allBluePawnSpots = [];
+    for(var i=0;i<64;i++){
+      if(label[i][0] == String.fromCharCode(pos[0].charCodeAt()) && label[i][1] == parseInt(pos[1])+1 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()) && label[i][1] == parseInt(pos[1])+2 
+        ){
+        allBluePawnSpots.push(label[i]);
+      }
+    }
+    for(var i=0;i<allBluePawnSpots.length;i++){
+      if(bluePieces['bluePositions'].indexOf(allBluePawnSpots[i]) == -1 && redPieces['redPositions'].indexOf(allBluePawnSpots[i]) == -1){
+        area.push(allBluePawnSpots[i]);
+      }
+      else if(color === 'blue' && bluePieces['bluePositions'].indexOf(allBluePawnSpots[i]) == -1){
+        area.push(allBluePawnSpots[i]);
+      }
+      
+    }
   }
 }

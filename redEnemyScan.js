@@ -90,6 +90,94 @@ var redEnemyScan = {
         }
       }
     }
+  },
+  'compPawn1': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn1'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn2': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn2'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn3': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn3'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn4': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn4'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn5': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn5'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn6': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn6'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn7': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn7'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compPawn8': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn8'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
   }
 }
 function redCaptureScan(){

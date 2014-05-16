@@ -42,5 +42,45 @@ var findAreaRed = {
     area = [];
     moves.knightMoves(redPieces['compKnight2'],area,'red');
     redPieces['currentArea'] = area;
+  },
+  'compPawn1': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn1'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn2': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn2'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn3': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn3'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn4': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn4'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn5': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn5'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn6': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn6'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn7': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn7'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compPawn8': function(){
+    area = [];
+    moves.redPawnMoves(redPieces['compPawn8'],area,'red');
+    redPieces['currentArea'] = area;
   }
 }

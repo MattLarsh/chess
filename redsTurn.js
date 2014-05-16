@@ -36,6 +36,6 @@ function redsTurn(){
     bluePieces['inCheck'] = 'yes';
   }
   redPieces['enemyInRange'] = [];
-  bothPieces['turn'] = 'blue'
+  bothPieces['turn'] = 'blue';
   
 }

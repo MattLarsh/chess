@@ -70,6 +70,12 @@ var findAreaBlue = {
 	  moves.knightMoves(bluePieces['Knight2'],area,'blue');
 	  addColor(area);
 	  bluePieces['currentArea'] = area;
+	},
+	'Pawn1': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn1'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
 	}
 
 

@@ -11,7 +11,7 @@ $('#board').on('click','.red',function(e){
     	delete redPieces[redPiece];
       var redIndex = redPieces['totalPieces'].indexOf(redPiece);
       delete redPieces['totalPieces'][redIndex];
-      redPieces['totalPieces'].length = redPieces['totalPieces'].length -1;
+      //redPieces['totalPieces'].length = redPieces['totalPieces'].length -1;
       delete redEnemyScan[redPiece];
     	bluePieces['freshCaptive'] = 'yes';
     	colorClear();
