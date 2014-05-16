@@ -38,5 +38,27 @@ var findAreaBlue = {
 	  moves.diagonal(bluePieces['Bishop1'],area,'blue');
 	  addColor(area);
 	  bluePieces['currentArea'] = area;
+	},
+	'Bishop2': function(){
+		area = [];
+	  moves.diagonal(bluePieces['Bishop2'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Rook1': function(){
+		area = [];
+	  moves.horiz(bluePieces['Rook1'],area,'blue');
+	  moves.vertical(bluePieces['Rook1'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Rook2': function(){
+		area = [];
+	  moves.horiz(bluePieces['Rook2'],area,'blue');
+	  moves.vertical(bluePieces['Rook2'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
 	}
+
+
 }
