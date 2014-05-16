@@ -68,7 +68,29 @@ var redEnemyScan = {
         }
       }
     }
-	}
+	},
+  'compKnight1': function(){
+    area = [];
+    moves.knightMoves(redPieces['compKnight1'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  },
+  'compKnight2': function(){
+    area = [];
+    moves.knightMoves(redPieces['compKnight2'],area,'red');
+    for(var i=0;i<bluePieces['bluePositions'].length;i++){
+      for(var j=0;j<area.length;j++){
+        if(bluePieces['bluePositions'][i] == area[j]){
+          redPieces['enemyInRange'].push(area[j]);
+        }
+      }
+    }
+  }
 }
 function redCaptureScan(){
 	for(var i=0;i<redPieces['totalPieces'].length;i++){

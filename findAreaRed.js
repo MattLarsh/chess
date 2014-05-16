@@ -32,5 +32,15 @@ var findAreaRed = {
     moves.horiz(redPieces['compRook2'],area,'red');
     moves.vertical(redPieces['compRook2'],area,'red');
     redPieces['currentArea'] = area;
+  },
+  'compKnight1': function(){
+    area = [];
+    moves.knightMoves(redPieces['compKnight1'],area,'red');
+    redPieces['currentArea'] = area;
+  },
+  'compKnight2': function(){
+    area = [];
+    moves.knightMoves(redPieces['compKnight2'],area,'red');
+    redPieces['currentArea'] = area;
   }
 }

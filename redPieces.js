@@ -5,8 +5,10 @@ var redPieces = {
   'compBishop2': 'c8',
   'compRook1': 'a8',
   'compRook2': 'h8',
+  'compKnight1': 'b8',
+  'compKnight2': 'g8',
   'enemyInRange': [],
-  'totalPieces': ['compKing','compQueen', 'compBishop1', 'compBishop2','compRook1','compRook2'],
+  'totalPieces': ['compKing','compQueen', 'compBishop1', 'compBishop2','compRook1','compRook2','compKnight1','compKnight2'],
   'inCheck': 'no',
   'stillInCheck': [],
   'count': 0
