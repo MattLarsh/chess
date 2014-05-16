@@ -58,6 +58,18 @@ var findAreaBlue = {
 	  moves.vertical(bluePieces['Rook2'],area,'blue');
 	  addColor(area);
 	  bluePieces['currentArea'] = area;
+	},
+	'Knight1': function(){
+		area = [];
+	  moves.knightMoves(bluePieces['Knight1'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Knight2': function(){
+		area = [];
+	  moves.knightMoves(bluePieces['Knight2'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
 	}
 
 

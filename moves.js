@@ -217,5 +217,30 @@ moves = {
   },
   knightMoves:function(pos,area,color){
     var allKnightSpots = [];
+    for(var i=0;i<64;i++){
+      if(label[i][0] == String.fromCharCode(pos[0].charCodeAt()-1) && label[i][1] == parseInt(pos[1])+2 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()+1) && label[i][1] == parseInt(pos[1])+2 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()+2) && label[i][1] == parseInt(pos[1])+1 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()+2) && label[i][1] == parseInt(pos[1])-1 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()+1) && label[i][1] == parseInt(pos[1])-2 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()-1) && label[i][1] == parseInt(pos[1])-2 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()-2) && label[i][1] == parseInt(pos[1])-1 ||
+         label[i][0] == String.fromCharCode(pos[0].charCodeAt()-2) && label[i][1] == parseInt(pos[1])+1
+        ){
+        allKnightSpots.push(label[i]);
+      }
+    }
+    for(var i=0;i<allKnightSpots.length;i++){
+      if(bluePieces['bluePositions'].indexOf(allKnightSpots[i]) == -1 && redPieces['redPositions'].indexOf(allKnightSpots[i]) == -1){
+        area.push(allKnightSpots[i]);
+      }
+      else if(color === 'blue' && bluePieces['bluePositions'].indexOf(allKnightSpots[i]) == -1){
+        area.push(allKnightSpots[i]);
+      }
+      else if(color === 'red' && redPieces['redPositions'].indexOf(allKnightSpots[i]) == -1){
+        area.push(allKnightSpots[i]);
+      }
+    }
+
   }
 }
