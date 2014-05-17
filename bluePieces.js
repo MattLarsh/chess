@@ -8,8 +8,15 @@ var bluePieces = {
 	'Knight1': 'b1',
 	'Knight2': 'g1',
 	'Pawn1': 'a2',
+	'Pawn2': 'b2',
+	'Pawn3': 'c2',
+	'Pawn4': 'd2',
+	'Pawn5': 'e2',
+	'Pawn6': 'f2',
+	'Pawn7': 'g2',
+	'Pawn8': 'h2',
 	'enemyRange': [],
-	'totalPieces': ['Queen', 'King','Bishop1', 'Bishop2','Rook1','Rook2','Knight1','Knight2','Pawn1'],
+	'totalPieces': ['Queen', 'King','Bishop1', 'Bishop2','Rook1','Rook2','Knight1','Knight2','Pawn1','Pawn2','Pawn3','Pawn4','Pawn5','Pawn6','Pawn7','Pawn8'],
 	'inCheck': 'no',
 	'freshCaptive': 'no'
 }

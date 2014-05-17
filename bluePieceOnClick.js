@@ -1,5 +1,4 @@
 $('#board').on('click','.blue', function(e){
-	
 	bluePositions();
 	redPositions();
   if(bothPieces['turn'] === 'blue'){
@@ -13,9 +12,6 @@ $('#board').on('click','.blue', function(e){
     bothPieces['turn'] = 'bluePieceUp';
   }
 });
-
-
-
 
 
 
@@ -75,6 +71,48 @@ var findAreaBlue = {
 	'Pawn1': function(){
 		area = [];
 	  moves.bluePawnMoves(bluePieces['Pawn1'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn2': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn2'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn3': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn3'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn4': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn4'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn5': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn5'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn6': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn6'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn7': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn7'],area,'blue');
+	  addColor(area);
+	  bluePieces['currentArea'] = area;
+	},
+	'Pawn8': function(){
+		area = [];
+	  moves.bluePawnMoves(bluePieces['Pawn8'],area,'blue');
 	  addColor(area);
 	  bluePieces['currentArea'] = area;
 	}
