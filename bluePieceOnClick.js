@@ -1,4 +1,5 @@
 $('#board').on('click','.blue', function(e){
+	
 	bluePositions();
 	redPositions();
   if(bothPieces['turn'] === 'blue'){

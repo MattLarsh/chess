@@ -23,9 +23,11 @@ $('#board').on('click', '.box', function(e){
 	    redPieces['enemyInRange'] = [];
 	    return;
 	  }
+
 	  bluePieces['inCheck'] = 'no';
 	  bothPieces['turn'] = 'red';
-	  redPieces['enemyInRange'] = [];       
+	  redPieces['enemyInRange'] = []; 
+
 	  if(bothPieces['turn'] === 'red'){
 	  	redsTurn();
 	  }
